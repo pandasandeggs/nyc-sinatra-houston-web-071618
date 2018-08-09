@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <form action="/figures/<%@figure.id%>" method="post">
+      <input type="hidden" name="_method" value="patch" />
+      <input type="text" name="figures[][:name]" value="<%= @figure.name %>" />
+      <button>Edit Figure</button />
+    </form>
+  </body>
+</html>
